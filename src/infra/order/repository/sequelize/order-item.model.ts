@@ -7,8 +7,8 @@ import {
   PrimaryKey,
 } from "sequelize-typescript";
 
-import { ProductModel } from "./product.model";
 import { OrderModel } from "./order.model";
+import { ProductModel } from "../../../product/repository/sequilize/product.model";
 
 @Table({ tableName: "order_items", timestamps: false })
 export class OrderItemModel extends Model {
